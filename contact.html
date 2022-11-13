@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellatrix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,600;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+        rel="stylesheet">
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="index.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("flTwpPRGV0BtFf89x");
+   })();
+</script>
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contests.html">CONTESTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.1640331343797!2d82.08012771495663!3d26.28878188340024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a7c86d691219f%3A0x99a3eb1e7c07f78f!2sKamla%20Nehru%20Institute%20of%20Technology%2C%20Sultanpur%20(U.P.)!5e0!3m2!1sen!2sin!4v1667037772352!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>
+                            KNIT,Maiytree hostel
+                        </h5>
+                        <p>Sultanpur , Uttar Pradesh</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>akamisha761@gmail.com</h5>
+                        <p> Email us more contact and want to madee project like this.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <!-- <form action="form-handler.php" method="post" onsubmit="sendEmail()"; reset(); return false > -->
+                <!-- <form onsubmit="sendEmail()"> -->
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    <input type="text" id="subject" placeholder="Enter Your Interested Language" required>
+                    <textarea rows="8"id="msg" placeholder="Message" required></textarea>
+                    <button type="submit" onclick="sendEmail()" class="hero-btn  red-btn">Send Message</button>
+                <!-- </form> -->
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p> Hi I am going to tell u about this site.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Made with <i class="fa fa-heart-o"></i> by BELLATRIX MEMBER (Nishu Gupta)</p>
+    </section>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <!-- <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "akamisha761@gmail.com",
+                Password: "01818",
+                To: 'nishu.20628@knit.ac.in',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script> -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+       
+       
+        
+      
+      
+    </script>
+
+</body>
+
+</html>

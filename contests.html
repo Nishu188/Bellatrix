@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellatrix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<link  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contests.html">CONTESTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>Contests</h1>
+    </section>
+    
+   <!-------Contests-------->
+   <section class="contests">
+    <h1>CheckOut The Contests Date</h1>
+    <p>Bellatrix presents all the important dates and times of the coding platforms in one place.</p>
+    <div class="row">
+        <div class="contests-col">
+            <a href="https://www.codechef.com/"><h3>CodeChef</h3></a>
+            <p>Code-Chef is an online educational program and competitive programming community of global programmers. Code-Chef started as an educational initiative in 2009 by Directi, an Indian software company. In 2020, it became owned by Unacademy.</p>
+        </div>
+        <div class="contests-col">
+            <a href="https://www.codingninjas.com/"><h3>Coding Ninjas</h3></a>
+            <p>Coding Ninjas was founded in 2016 to bridge the knowledge gap between colleges and industry.Founded by Ankush Singla, Kannu Mittal and Dhawal Parate, Coding Ninjas boasts of world-class teaching faculty and a state-of-art learning platform for Coding education with faculty alumni of IIT, Stanford, IIIT and Facebook.</p>
+        </div>
+        <div class="contests-col">
+            <a href="https://codeforces.com/"><h3>CodeForces</h3></a>
+            <p>Codeforces is a website that hosts competitive programming contests. It is maintained by a group of competitive programmers from ITMO University led by Mikhail Mirzayanov. Since 2013, Codeforces claims to surpass Topcoder in terms of active contestants.</p>
+        </div>
+        <div class="contests-col">
+            <a href="https://www.interviewbit.com/"><h3>Interviewbit</h3></a>
+            <p>InterviewBit is a platform to learn skills that you need for technology jobs. We help you polish your skills and get ready for the job, whether you are a fresh college graduate or a working professional.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Facilities-->
+
+<section class="facilities">
+    <h1>What you will get</h1>
+    <p>You will get to know about how to start a coding in various coding platforms.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+            <h3>World class library</h3>
+            <p>I am good at doing following things.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Largest play ground</h3>
+            <p>I am good at doing following things.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty and healthy food</h3>
+            <p>I am good at doing following things.</p>
+        </div>
+    </div>
+</section>
+
+    
+
+    
+
+<section class="footer">
+    <h4>About us</h4>
+    <p> Hi I am going to tell u about this site.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p> Made with <i class="fa fa-heart-o"></i> by BELLATRIX MEMBER (Nishu Gupta)</p>
+</section>
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+</script>
+
+</body>
+</html>
